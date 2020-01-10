@@ -55,6 +55,7 @@ body{
     white-space: nowrap;
     margin-left: 10px;
     padding: 5px 28px;
+    cursor: pointer;
 }
 
 
@@ -93,7 +94,7 @@ body{
 }
 .siteList .site{
     background: #fff;
-    opacity: 0.9;
+    opacity: 0.8;
     width: 160px;
     display: flex;
     flex-direction: column;
@@ -103,6 +104,11 @@ body{
     position: relative;
     cursor: pointer;
 }
+
+.siteList .site:hover {
+    opacity: 1;
+}
+
 .siteList .site > .logo{
     height: 64px;
     width: 64px;
@@ -124,8 +130,10 @@ body{
     cursor: default;
 }
 
+
 .siteList .site:hover > .close{
     display: block;
+    
 }
 
 .siteList .addButton{
@@ -135,9 +143,16 @@ body{
     align-items: center;
     padding:20px 0;
     background: #fff;
-    opacity: 0.9;
+    opacity: 0.8;
     border-radius: 4px;
 }   
+
+.siteList .addButton:hover{
+    opacity: 1;
+}
+
+
+
 .siteList .addButton .iconWrapper{
     width: 64px;
     height: 64px;    
@@ -153,4 +168,4 @@ body{
 }   
 
 
-/*# sourceMappingURL=style.00502485.css.map */
+/*# sourceMappingURL=style.65fd9be7.css.map */
