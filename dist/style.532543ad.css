@@ -6,16 +6,16 @@ ul,ol{list-style: none;}
 a{color: inherit;text-decoration: none;}
 img{max-width: 100%; max-height: 100%;}
 
-body{
-    background: #ddd;
-}
 /* body{
-   background-image:url(images/jiang.jpg) ;
+    background: #ddd;
+} */
+body{
+   background-image:url(jiang.89179683.jpg);
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
-} */
+}
 
 .globalHeader{
     margin : 20px;
@@ -151,4 +151,4 @@ body{
 }   
 
 
-/*# sourceMappingURL=style.6b86fe9d.css.map */
+/*# sourceMappingURL=style.532543ad.css.map */
