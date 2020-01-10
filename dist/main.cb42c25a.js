@@ -192,7 +192,13 @@ window.onbeforeunload = function () {
 };
 
 $(document).on('keypress', function (e) {
-  console.log(e.key);
+  var key = e.key;
+
+  for (var i = 0; i < hashMap.length; i++) {
+    if (hashMap[i].logo.toLocaleLowerCase() === key) {
+      window.open(hashMap[i].url);
+    }
+  }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.1e60bfa6.js.map
+//# sourceMappingURL=main.cb42c25a.js.map

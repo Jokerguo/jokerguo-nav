@@ -93,6 +93,7 @@ body{
 }
 .siteList .site{
     background: #fff;
+    opacity: 0.9;
     width: 160px;
     display: flex;
     flex-direction: column;
@@ -134,6 +135,7 @@ body{
     align-items: center;
     padding:20px 0;
     background: #fff;
+    opacity: 0.9;
     border-radius: 4px;
 }   
 .siteList .addButton .iconWrapper{

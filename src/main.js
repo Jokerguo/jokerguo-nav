@@ -86,5 +86,10 @@ window.onbeforeunload =()=>{
 }
 
 $(document).on('keypress',(e)=>{
-    console.log(e.key)
+    const key = e.key
+    for(let i=0;i<hashMap.length;i++){
+        if(hashMap[i].logo.toLocaleLowerCase() === key){
+            window.open(hashMap[i].url)
+        }
+    }
 })
