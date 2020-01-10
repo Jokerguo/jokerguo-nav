@@ -1,0 +1,151 @@
+/*css reset*/
+*{box-sizing: border-box;}
+*:before,*:after {box-sizing: border-box;}
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: inherit;text-decoration: none;}
+img{max-width: 100%; max-height: 100%;}
+
+body{
+    background: #ddd;
+}
+/* body{
+   background-image:url(images/jiang.jpg) ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+} */
+
+.globalHeader{
+    margin : 20px;
+}
+
+@media (min-width:500px){
+    .globalHeader{
+        margin:100px 0;
+    }
+}
+
+.searchForm{
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:500px){
+    .searchForm {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.searchForm > input{
+    padding : 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+}
+
+.searchForm > button{
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0282b9;
+    color:white;
+    white-space: nowrap;
+    margin-left: 10px;
+    padding: 5px 28px;
+}
+
+
+.globalMain{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siteList{
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+@media(min-width:500px){
+    .siteList{
+        margin-left: 0;
+        margin-right: -25px;
+        justify-content: flex-start;
+
+    }
+}
+
+.siteList li{
+    margin-bottom: 10px;
+    
+}
+
+@media(min-width:500px){
+    .siteList li{
+        margin-right: 25px;
+    }
+}
+.siteList .site{
+    background: #fff;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+.siteList .site > .logo{
+    height: 64px;
+    width: 64px;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.siteList .site > .link{
+    font-size: 14px;
+    padding-top: 6px;
+}
+.siteList .site > .close{
+    position: absolute;
+    top:0px;
+    right:5px;
+    display: none;
+    cursor: default;
+}
+
+.siteList .site:hover > .close{
+    display: block;
+}
+
+.siteList .addButton{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0;
+    background: #fff;
+    border-radius: 4px;
+}   
+.siteList .addButton .iconWrapper{
+    width: 64px;
+    height: 64px;    
+
+}
+.siteList .addButton .icon{
+    width: 64px;
+    height: 64px;
+}
+.siteList .addButton .text{
+    padding-top: 6px;
+    font-size: 14px;
+}   
