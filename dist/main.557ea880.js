@@ -123,15 +123,15 @@ var $lastLi = $siteList.find('.lastLi');
 var x = localStorage.getItem('x');
 var xObj = JSON.parse(x);
 var hashMap = xObj || [{
-  logo: 'A',
-  url: 'https://www.acfun.cn/'
+  logo: 'J',
+  url: 'http://jokerguo.top/'
 }, {
   logo: 'B',
-  url: 'https://www.bilibili.com/'
+  url: 'https://www.baidu.com/'
 }];
 
 var simplifyUrl = function simplifyUrl(url) {
-  return url.replace('https://', '').replace('http://').replace('www.', '').replace(/\/.*/, '');
+  return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, '');
 }; //遍历hashMap
 
 
@@ -200,5 +200,8 @@ $(document).on('keypress', function (e) {
     }
   }
 });
+$('#searchForm').on('mousedown', function () {
+  $(document).off('keypress');
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.cb42c25a.js.map
+//# sourceMappingURL=main.557ea880.js.map

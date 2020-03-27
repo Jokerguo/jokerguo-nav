@@ -3,13 +3,13 @@ const $lastLi = $siteList.find('.lastLi')
 const x = localStorage.getItem('x')
 const xObj = JSON.parse(x)
 const hashMap =  xObj || [
-    {logo : 'A', url : 'https://www.acfun.cn/'},
-    {logo: 'B' , url : 'https://www.bilibili.com/'}
+    {logo : 'J', url : 'http://jokerguo.top/'},
+    {logo: 'B' , url : 'https://www.baidu.com/'}
 ]
 
 const simplifyUrl = (url)=>{
     return url.replace('https://','')
-                .replace('http://')
+                .replace('http://','')
                 .replace('www.','')
                 .replace(/\/.*/,'')
 
@@ -85,11 +85,17 @@ window.onbeforeunload =()=>{
     localStorage.setItem('x',string)
 }
 
-$(document).on('keypress',(e)=>{
-    const key = e.key
-    for(let i=0;i<hashMap.length;i++){
-        if(hashMap[i].logo.toLocaleLowerCase() === key){
-            window.open(hashMap[i].url)
+
+    $(document).on('keypress',(e)=>{
+        const key = e.key
+        for(let i=0;i<hashMap.length;i++){
+            if(hashMap[i].logo.toLocaleLowerCase() === key){
+                window.open(hashMap[i].url)
+            }
         }
-    }
+    })
+
+
+$('#searchForm').on('mousedown',()=>{
+   $(document).off('keypress')
 })
