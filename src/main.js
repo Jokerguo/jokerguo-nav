@@ -3,7 +3,7 @@ const $lastLi = $siteList.find('.lastLi')
 const x = localStorage.getItem('x')
 const xObj = JSON.parse(x)
 const hashMap =  xObj || [
-    {logo : 'J', url : 'http://jokerguo.top/'},
+    {logo : 'J', url : 'https://jokerguo.github.io/'},
     {logo: 'B' , url : 'https://www.baidu.com/'}
 ]
 
